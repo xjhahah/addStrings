@@ -13,10 +13,10 @@ public:
 		int end1 = num1.size() - 1;
 		int end2 = num2.size() - 1;
 
-		//创进一个新的数组来保存结果
+		//鍒涜繘涓�涓柊鐨勬暟缁勬潵淇濆瓨缁撴灉
 		string retstr;
 		retstr.reserve(num1.size() > num2.size() ? num1.size() + 1 : num2.size() + 1);
-		//进位
+		//杩涗綅
 		char next = 0;
 		while (end1 >= 0 || end2 >= 0)
 		{
@@ -56,6 +56,6 @@ private:
 int main()
 {
 	Solution s;
-	s.addStrings("0", "0");
+	s.addStrings("123", "4567");
 	return 0;
 }
